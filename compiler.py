@@ -1,0 +1,132 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'compiler.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Comp(object):
+    def setupUi(self, Comp):
+        Comp.setObjectName("Comp")
+        Comp.resize(331, 252)
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(Comp)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(Comp)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.frame)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.label = QtWidgets.QLabel(self.frame)
+        font = QtGui.QFont()
+        font.setFamily("Ubuntu Condensed")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color:rgb(115, 210, 22)")
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout_2.addWidget(self.label)
+        self.frame_3 = QtWidgets.QFrame(self.frame)
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_3)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_3 = QtWidgets.QLabel(self.frame_3)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        self.language_selector = QtWidgets.QComboBox(self.frame_3)
+        self.language_selector.setObjectName("language_selector")
+        self.language_selector.addItem("")
+        self.language_selector.addItem("")
+        self.language_selector.addItem("")
+        self.language_selector.addItem("")
+        self.horizontalLayout_2.addWidget(self.language_selector)
+        self.verticalLayout_4.addLayout(self.horizontalLayout_2)
+        self.verticalLayout_2.addWidget(self.frame_3)
+        self.frame_4 = QtWidgets.QFrame(self.frame)
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_2 = QtWidgets.QLabel(self.frame_4)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout.addWidget(self.label_2)
+        self.file_path_entry = QtWidgets.QLineEdit(self.frame_4)
+        self.file_path_entry.setStyleSheet("background-color: rgb(186, 189, 182);")
+        self.file_path_entry.setObjectName("file_path_entry")
+        self.horizontalLayout.addWidget(self.file_path_entry)
+        self.select_file = QtWidgets.QToolButton(self.frame_4)
+        self.select_file.setStyleSheet("border-color: rgb(252, 233, 79);")
+        self.select_file.setObjectName("select_file")
+        self.horizontalLayout.addWidget(self.select_file)
+        self.horizontalLayout_4.addLayout(self.horizontalLayout)
+        self.verticalLayout_2.addWidget(self.frame_4)
+        self.frame_2 = QtWidgets.QFrame(self.frame)
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_2)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.compile_file = QtWidgets.QPushButton(self.frame_2)
+        self.compile_file.setStyleSheet("color: rgb(115, 210, 22);\n"
+"background-color: rgb(252, 175, 62);")
+        self.compile_file.setObjectName("compile_file")
+        self.horizontalLayout_3.addWidget(self.compile_file)
+        self.run_file = QtWidgets.QPushButton(self.frame_2)
+        self.run_file.setStyleSheet("color: rgb(46, 52, 54);\n"
+"border-color: rgb(114, 159, 207);\n"
+"background-color: rgb(138, 226, 52);")
+        self.run_file.setObjectName("run_file")
+        self.horizontalLayout_3.addWidget(self.run_file)
+        self.verticalLayout_2.addWidget(self.frame_2)
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout_2.addWidget(self.label_4)
+        self.verticalLayout.addWidget(self.frame)
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.retranslateUi(Comp)
+        QtCore.QMetaObject.connectSlotsByName(Comp)
+
+    def retranslateUi(self, Comp):
+        _translate = QtCore.QCoreApplication.translate
+        Comp.setWindowTitle(_translate("Comp", "My Compiler"))
+        self.label.setText(_translate("Comp", "Language Compiler v2.0"))
+        self.label_3.setText(_translate("Comp", "Select Language"))
+        self.language_selector.setToolTip(_translate("Comp", "Select language"))
+        self.language_selector.setItemText(0, _translate("Comp", "C"))
+        self.language_selector.setItemText(1, _translate("Comp", "Java"))
+        self.language_selector.setItemText(2, _translate("Comp", "Python"))
+        self.language_selector.setItemText(3, _translate("Comp", "Pascal"))
+        self.label_2.setText(_translate("Comp", "FIle Path"))
+        self.file_path_entry.setToolTip(_translate("Comp", "Enter the path of your file"))
+        self.select_file.setText(_translate("Comp", "..."))
+        self.compile_file.setText(_translate("Comp", "Compile"))
+        self.run_file.setText(_translate("Comp", "Run"))
+        self.label_4.setText(_translate("Comp", "Navi Coperation (c) 2021 Alrights Reserved"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Comp = QtWidgets.QWidget()
+    ui = Ui_Comp()
+    ui.setupUi(Comp)
+    Comp.show()
+    sys.exit(app.exec_())
